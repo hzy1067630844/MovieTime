@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+		<style type="text/css">
+			body {
+				font-family: "微软雅黑";
+			}
+			
+			.navbar-collapse {
+				font-size: 1.1em;
+			}
+			
+			article {
+				display: flex;
+				flex-flow: row;
+				margin: 0 10px;
+			}
+			
+			.aGroup1 {
+				flex: 3;
+				order: 1;
+			}
+			
+			.aGroup2 {
+				flex: 3;
+				order: 2;
+			}
+			
+			.aGroup3 {
+				flex: 3;
+				order: 3;
+				
+			}
+			
+			.label-primary {
+				font-size: 0.8em;
+			}
+			
+			@media only screen and (max-width: 750px) {
+				article {
+					flex-flow: column;
+				}
+				.list-group {
+					width: 100%;
+					margin: 0 0 10px 0;
+					padding: 0 0 0 0;
+				}
+				footer h4 {
+					font-size: 0.9em;
+				}
+			}
+			
+			footer {
+				height: 50px;
+				position: relative;
+				top: -20px;
+				left: 0px;
+			}
+			
+			@media only screen and (max-width: 960px) {
+				.aSearch {
+					display: none;
+				}
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default" role="navigation" style="position: relative;">
+			<!--导航栏-->
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+			<span class="sr-only">切换导航</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+					<a class="navbar-brand " href="caidan.html"><b><span class="glyphicon glyphicon-hd-video"></span>&nbsp;MovieTime</b></a>
+				</div>
+				<div class="collapse navbar-collapse" id="example-navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;首页</a>
+						</li>
+						<li>
+							<a href="top.html"><span class="glyphicon glyphicon-th-list"></span>&nbsp;排行</a>
+						</li>
+						<li>
+							<a href="news.html"><span class="glyphicon glyphicon-globe"></span>&nbsp;影讯</a>
+						</li>
+						<li>
+							<a href="class.html"><span class="glyphicon glyphicon-th-large"></span>&nbsp;分类</a>
+						</li>
+						
+						<li>
+							<a href="history.html"><span class="glyphicon glyphicon-time"></span>&nbsp;历史</a>
+						</li>
+						<li class="dropdown active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<span class="glyphicon glyphicon-user"></span> 用户<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu ">
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-log-in"></span>&nbsp;登陆</a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-log-out"></span>&nbsp;注销</a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;消息</a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-star-empty"></span>&nbsp;动态</a>
+								</li>
+							</ul>
+						</li>
+						<li><span class="aSearch ">
+			<form class="navbar-form navbar-left" role="search">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="请输入电影名">
+				</div>
+				<button type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i></button>
+			</form>
+			</span>
+						</li>
+					</ul>
+				</div>
+		</nav>
+
+		<div class="container" style="position: relative;width: 95%;">
+			<section class="container" style="position: absolute;top: -30px;width: 95%;">
+				<div class="page-header ">
+					<h1><span class="glyphicon glyphicon-th-list"></span>&nbsp;电影TOP<small>&nbsp;数据来源于豆瓣电影</small></h1>
+				</div>
+
+				<article " class="allGroup ">
+					<div class="list-group aGroup1 container ">
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP&nbsp;&nbsp;1</span>&nbsp;肖申克的救赎</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP&nbsp;&nbsp;2</span>&nbsp;霸王别姬</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP&nbsp;&nbsp;3</span>&nbsp;这个杀手不太冷</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP&nbsp;&nbsp;4</span>&nbsp;阿甘正传</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP&nbsp;&nbsp;5</span>&nbsp;美丽人生</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP&nbsp;&nbsp;6</span>&nbsp;千与千寻</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP&nbsp;&nbsp;7</span>&nbsp;辛德勒名单</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP&nbsp;&nbsp;8</span>&nbsp;泰坦尼克号</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP&nbsp;&nbsp;9</span>&nbsp;盗梦空间</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP10</span>&nbsp;机器人总动员</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP11</span>&nbsp;海上钢琴师</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP12</span>&nbsp;三傻大闹宝莱坞</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP13</span>&nbsp;忠犬八公的故事</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP14</span>&nbsp;放牛班的春天</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP15</span>&nbsp;大话西游之大圣娶亲</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP16</span>&nbsp;教父</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP17</span>&nbsp;龙猫</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP18</span>&nbsp;楚门的世界</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP19</span>&nbsp;乱世佳人</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP20</span>&nbsp;熔炉</a>
+					</div>
+		
+					<div class="list-group aGroup2 container ">
+						<a href="# " class="list-group-item "><span class="label label-primary ">TOP21</span>&nbsp;天堂电影院</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP22</span>&nbsp;触不可及</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP23</span>&nbsp;当幸福来敲门</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP24</span>&nbsp;无间道</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP25</span>&nbsp;星际穿越</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP26</span>&nbsp;十二怒汉</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP27</span>&nbsp;搏击俱乐部</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP28</span>&nbsp;怦然心动</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP29</span>&nbsp;指环王3:王者无敌</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP30</span>&nbsp;少年派的奇幻漂流</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP31</span>&nbsp;鬼子来了</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP32</span>&nbsp;天空之城</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP33</span>&nbsp;蝙蝠侠:黑暗骑士</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP34</span>&nbsp;活着</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP35</span>&nbsp;罗马假日</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP36</span>&nbsp;大话西游之月光宝盒</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP37</span>&nbsp;飞屋环游记</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP38</span>&nbsp;两杆大烟枪</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP39</span>&nbsp;窃听风暴</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP40</span>&nbsp;飞越疯人院</a>
+					</div>
+		
+					<div class="list-group aGroup3 container ">
+						<a href="# " class="list-group-item "><span class="label label-primary ">TOP41</span>&nbsp;海豚湾</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP42</span>&nbsp;闻香识女人</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP43</span>&nbsp;控方证人</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP44</span>&nbsp;V字仇杀队</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP45</span>&nbsp;哈尔的移动城堡</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP46</span>&nbsp;教父2</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP47</span>&nbsp;美丽心灵</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP48</span>&nbsp;死亡诗社</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP49</span>&nbsp;指环王2:双塔奇兵</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP50</span>&nbsp;指环王1:魔戒再现</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP51</span>&nbsp;辩护人</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP52</span>&nbsp;情书</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP53</span>&nbsp;疯狂动物城</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP54</span>&nbsp;饮食男女</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP55</span>&nbsp;美国往事</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP56</span>&nbsp;天使爱美丽</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP57</span>&nbsp;钢琴家</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP58</span>&nbsp;狮子王</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP59</span>&nbsp;七宗罪</a>
+  						<a href="# " class="list-group-item "><span class="label label-primary ">TOP60</span>&nbsp;被嫌弃的松子的一生</a>
+					</div>
+		
+		
+				</article>
+				<center>
+					<nav aria-label="Page navigation " >
+  						<ul class="pagination ">
+   							<li>
+   								<a href="# " aria-label="Previous ">
+        							<span aria-hidden="true ">&laquo;</span>
+      							</a>
+    						</li>
+    						<li class="active "><a href="# ">1</a></li>
+    						<li><a href="# ">2</a></li>
+    						<li><a href="# ">3</a></li>
+    						<li><a href="# ">4</a></li>
+    						<li><a href="# ">5</a></li>
+    						<li>
+      							<a href="# " aria-label="Next ">
+       					 			<span aria-hidden="true ">&raquo;</span>
+      							</a>
+    						</li>
+ 						</ul>
+					</nav>
+					<br />
+					</center>
+					<footer class="panel panel-default ">
+  			<center><h4 ><b>Designed and built by Hua Zhengyuan</b>&nbsp;Copyright © 2017</h4></center>
+	</footer>
+	</section>
+</div>
+
+	</body>
+</html>
